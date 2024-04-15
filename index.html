@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- insert index.js into head -->
+    <script src="index.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Title called my tic tac toe game -->
+    <h1>
+        My Tic-Tac-Toe Game
+    </h1>
+    <!-- 3x3 grid -->
+    <div
+    style="
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    height: 500px;
+    "
+    >
+<!-- Buttons from 0 to 8 with the correspondingID and the number in the text with buttonClick(number)-->
+        <button id="0" onclick="buttonClick(0)">0</button>
+        <button id="1" onclick="buttonClick(1)">1</button>
+        <button id="2" onclick="buttonClick(2)">2</button>
+        <button id="3" onclick="buttonClick(3)">3</button>
+        <button id="4" onclick="buttonClick(4)">4</button>
+        <button id="5" onclick="buttonClick(5)">5</button>
+        <button id="6" onclick="buttonClick(6)">6</button>
+        <button id="7" onclick="buttonClick(7)">7</button>
+        <button id="8" onclick="buttonClick(8)">8</button>
+        
+    </div>
+
+</body>
+
+</html>
