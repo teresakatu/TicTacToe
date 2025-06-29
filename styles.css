@@ -90,8 +90,8 @@ body {
     background: linear-gradient(45deg, #ffecd2, #fcb69f);
     border-radius: 20px;
     box-shadow: inset 0 5px 15px rgba(0, 0, 0, 0.1);
-    justify-content: center;
-    width: fit-content;
+    width: 340px;
+    height: 340px;
 }
 
 .cell {
@@ -267,6 +267,8 @@ body {
     .game-board {
         grid-template-columns: repeat(3, 80px);
         grid-template-rows: repeat(3, 80px);
+        width: 280px;
+        height: 280px;
         padding: 15px;
     }
     
@@ -281,6 +283,8 @@ body {
     .game-board {
         grid-template-columns: repeat(3, 70px);
         grid-template-rows: repeat(3, 70px);
+        width: 250px;
+        height: 250px;
         gap: 8px;
         padding: 12px;
     }
