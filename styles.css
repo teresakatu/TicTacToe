@@ -82,16 +82,16 @@ body {
 
 .game-board {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
     gap: 10px;
     margin: 0 auto 30px auto;
     padding: 20px;
     background: linear-gradient(45deg, #ffecd2, #fcb69f);
     border-radius: 20px;
     box-shadow: inset 0 5px 15px rgba(0, 0, 0, 0.1);
+    justify-content: center;
     width: fit-content;
-    max-width: 100%;
 }
 
 .cell {
@@ -107,7 +107,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
 }
 
 .cell:hover {
@@ -265,26 +264,30 @@ body {
         font-size: 2rem;
     }
     
+    .game-board {
+        grid-template-columns: repeat(3, 80px);
+        grid-template-rows: repeat(3, 80px);
+        padding: 15px;
+    }
+    
     .cell {
         width: 80px;
         height: 80px;
         font-size: 2.5rem;
     }
-    
-    .game-board {
-        padding: 15px;
-    }
 }
 
 @media (max-width: 400px) {
+    .game-board {
+        grid-template-columns: repeat(3, 70px);
+        grid-template-rows: repeat(3, 70px);
+        gap: 8px;
+        padding: 12px;
+    }
+    
     .cell {
         width: 70px;
         height: 70px;
         font-size: 2rem;
-    }
-    
-    .game-board {
-        gap: 8px;
-        padding: 12px;
     }
 }
