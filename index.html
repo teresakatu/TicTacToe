@@ -15,7 +15,10 @@
             <h1 class="title">🐱 Cats vs Dogs 🐶</h1>
             <div class="player-indicator">
                 <div class="current-player">
-                    Current Player: <span id="current-player-display">🐱</span>
+                    Current Player: 
+                    <img id="current-player-image" class="current-player-image" 
+                         src="https://images.pexels.com/photos/2071882/pexels-photo-2071882.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" 
+                         alt="Current Player">
                 </div>
             </div>
         </div>
@@ -38,11 +41,21 @@
 
         <div class="score-board">
             <div class="score">
-                <span class="score-label">🐱 Cats</span>
+                <div class="score-label">
+                    <img class="score-image" 
+                         src="https://images.pexels.com/photos/2071882/pexels-photo-2071882.jpeg?auto=compress&cs=tinysrgb&w=60&h=60&fit=crop" 
+                         alt="Cat">
+                    Cats
+                </div>
                 <span class="score-value" id="cat-score">0</span>
             </div>
             <div class="score">
-                <span class="score-label">🐶 Dogs</span>
+                <div class="score-label">
+                    <img class="score-image" 
+                         src="https://images.pexels.com/photos/1805164/pexels-photo-1805164.jpeg?auto=compress&cs=tinysrgb&w=60&h=60&fit=crop" 
+                         alt="Dog">
+                    Dogs
+                </div>
                 <span class="score-value" id="dog-score">0</span>
             </div>
         </div>
@@ -52,7 +65,7 @@
     <div id="winner-modal" class="modal">
         <div class="modal-content">
             <div class="winner-animation">
-                <div id="winner-emoji"></div>
+                <img id="winner-image" class="winner-image" src="" alt="Winner">
                 <h2 id="winner-text"></h2>
                 <p id="winner-message"></p>
             </div>
