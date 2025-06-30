@@ -43,9 +43,7 @@ body {
     font-size: 32px;
     color: #2d3748;
     margin-bottom: 20px;
-    text-shadow: 
-        6px 6px 0px #4a5568,
-        12px 12px 20px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
     animation: bounce 2s infinite;
     letter-spacing: 3px;
     transform: translateZ(0);
@@ -57,15 +55,11 @@ body {
     }
     40% {
         transform: translateY(-10px);
-        text-shadow: 
-            6px 12px 0px #4a5568,
-            12px 24px 25px rgba(0, 0, 0, 0.4);
+        text-shadow: 2px 4px 0px rgba(0, 0, 0, 0.25);
     }
     60% {
         transform: translateY(-5px);
-        text-shadow: 
-            6px 8px 0px #4a5568,
-            12px 16px 22px rgba(0, 0, 0, 0.35);
+        text-shadow: 2px 3px 0px rgba(0, 0, 0, 0.22);
     }
 }
 
@@ -85,9 +79,7 @@ body {
     justify-content: center;
     gap: 10px;
     letter-spacing: 1px;
-    text-shadow: 
-        4px 4px 0px #4a5568,
-        8px 8px 12px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.15);
 }
 
 .current-player-image {
@@ -98,21 +90,21 @@ body {
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
     image-rendering: crisp-edges;
-    filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
 }
 
 @keyframes pulse {
     0% {
         transform: scale(1);
-        filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.3));
+        filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
     }
     50% {
         transform: scale(1.2);
-        filter: drop-shadow(6px 6px 12px rgba(0, 0, 0, 0.4));
+        filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.25));
     }
     100% {
         transform: scale(1);
-        filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.3));
+        filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
     }
 }
 
@@ -206,17 +198,13 @@ body {
     box-shadow: 0 5px 15px rgba(232, 67, 147, 0.3);
     letter-spacing: 1px;
     text-transform: uppercase;
-    text-shadow: 
-        3px 3px 0px #c0392b,
-        6px 6px 12px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
 }
 
 .reset-btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(232, 67, 147, 0.4);
-    text-shadow: 
-        3px 6px 0px #c0392b,
-        6px 12px 16px rgba(0, 0, 0, 0.4);
+    text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.4);
 }
 
 .score-board {
@@ -244,9 +232,7 @@ body {
     margin-bottom: 5px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    text-shadow: 
-        3px 3px 0px #4834d4,
-        6px 6px 12px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
 }
 
 .score-image {
@@ -256,14 +242,12 @@ body {
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
     image-rendering: crisp-edges;
-    filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
 }
 
 .score-value {
     font-size: 28px;
-    text-shadow: 
-        4px 4px 0px #4834d4,
-        8px 8px 16px rgba(0, 0, 0, 0.4);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.4);
 }
 
 /* Modal Styles */
@@ -325,9 +309,7 @@ body {
 #winner-text {
     font-size: 20px;
     margin-bottom: 10px;
-    text-shadow: 
-        4px 4px 0px #4834d4,
-        8px 8px 16px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.4);
     letter-spacing: 2px;
     text-transform: uppercase;
 }
@@ -337,9 +319,7 @@ body {
     margin-bottom: 20px;
     opacity: 0.9;
     letter-spacing: 1px;
-    text-shadow: 
-        3px 3px 0px #4834d4,
-        6px 6px 12px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
 }
 
 .modal-btn {
@@ -354,17 +334,13 @@ body {
     box-shadow: 0 5px 15px rgba(232, 67, 147, 0.3);
     letter-spacing: 1px;
     text-transform: uppercase;
-    text-shadow: 
-        3px 3px 0px #c0392b,
-        6px 6px 12px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
 }
 
 .modal-btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(232, 67, 147, 0.4);
-    text-shadow: 
-        3px 6px 0px #c0392b,
-        6px 12px 16px rgba(0, 0, 0, 0.4);
+    text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.4);
 }
 
 /* Responsive Design */
@@ -375,9 +351,7 @@ body {
     
     .title {
         font-size: 24px;
-        text-shadow: 
-            4px 4px 0px #4a5568,
-            8px 8px 16px rgba(0, 0, 0, 0.3);
+        text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
     }
     
     .game-board {
@@ -410,37 +384,27 @@ body {
     
     .current-player {
         font-size: 14px;
-        text-shadow: 
-            3px 3px 0px #4a5568,
-            6px 6px 10px rgba(0, 0, 0, 0.2);
+        text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.15);
     }
     
     .score-label {
         font-size: 12px;
-        text-shadow: 
-            2px 2px 0px #4834d4,
-            4px 4px 8px rgba(0, 0, 0, 0.3);
+        text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
     }
     
     .score-value {
         font-size: 24px;
-        text-shadow: 
-            3px 3px 0px #4834d4,
-            6px 6px 12px rgba(0, 0, 0, 0.4);
+        text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.4);
     }
     
     #winner-text {
         font-size: 18px;
-        text-shadow: 
-            3px 3px 0px #4834d4,
-            6px 6px 12px rgba(0, 0, 0, 0.5);
+        text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.4);
     }
     
     #winner-message {
         font-size: 12px;
-        text-shadow: 
-            2px 2px 0px #4834d4,
-            4px 4px 8px rgba(0, 0, 0, 0.3);
+        text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
     }
 }
 
@@ -476,43 +440,31 @@ body {
     
     .title {
         font-size: 20px;
-        text-shadow: 
-            3px 3px 0px #4a5568,
-            6px 6px 12px rgba(0, 0, 0, 0.3);
+        text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
     }
     
     .current-player {
         font-size: 12px;
-        text-shadow: 
-            2px 2px 0px #4a5568,
-            4px 4px 8px rgba(0, 0, 0, 0.2);
+        text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.15);
     }
     
     .score-label {
         font-size: 10px;
-        text-shadow: 
-            2px 2px 0px #4834d4,
-            4px 4px 6px rgba(0, 0, 0, 0.3);
+        text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
     }
     
     .score-value {
         font-size: 22px;
-        text-shadow: 
-            3px 3px 0px #4834d4,
-            6px 6px 10px rgba(0, 0, 0, 0.4);
+        text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4);
     }
     
     #winner-text {
         font-size: 16px;
-        text-shadow: 
-            3px 3px 0px #4834d4,
-            6px 6px 10px rgba(0, 0, 0, 0.5);
+        text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4);
     }
     
     #winner-message {
         font-size: 10px;
-        text-shadow: 
-            2px 2px 0px #4834d4,
-            4px 4px 6px rgba(0, 0, 0, 0.3);
+        text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
     }
 }
