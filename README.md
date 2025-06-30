@@ -2,7 +2,6 @@
 
 A delightful and interactive Tic-Tac-Toe game featuring adorable cats and dogs! This project combines classic game logic with modern web design, creating an engaging experience with cute animal themes, smooth animations, and responsive design.
 
-![Game Preview](https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=600&h=300&fit=crop)
 
 ## 🎮 Features
 
