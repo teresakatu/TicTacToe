@@ -1,4 +1,4 @@
-# 🐱 Cats vs Dogs Tic-Tac-Toe 🐶
+# 🐱 🐶 Cats vs Dogs Tic-Tac-Toe 
 
 A delightful and interactive Tic-Tac-Toe game featuring adorable cats and dogs! This project combines classic game logic with modern web design, creating an engaging experience with cute animal themes, smooth animations, and responsive design.
 
