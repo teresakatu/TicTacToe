@@ -6,22 +6,16 @@ let arr = [
 ];
 
 // Current player that determines the current player (Cat starts first)
-let currPlayer = "cat";
+let currPlayer = "🐱";
 
 // Score tracking
 let scores = {
-    "cat": 0,
-    "dog": 0
+    "🐱": 0,
+    "🐶": 0
 };
 
 // Game state
 let gameActive = true;
-
-// Image URLs for cute pixel-style cats and dogs
-const images = {
-    cat: "https://images.pexels.com/photos/2071882/pexels-photo-2071882.jpeg?auto=compress&cs=tinysrgb&w=140&h=140&fit=crop",
-    dog: "https://images.pexels.com/photos/1805164/pexels-photo-1805164.jpeg?auto=compress&cs=tinysrgb&w=140&h=140&fit=crop"
-};
 
 function buttonClick(number) {
     if (!gameActive) return;
@@ -33,14 +27,10 @@ function buttonClick(number) {
         // Update the game state
         arr[row][col] = currPlayer;
         
-        // Update the button display with image
+        // Update the button display
         const button = document.getElementById(number);
-        const img = document.createElement('img');
-        img.src = images[currPlayer];
-        img.alt = currPlayer;
-        img.className = 'cell-image';
-        button.appendChild(img);
-        button.classList.add(currPlayer);
+        button.innerHTML = currPlayer;
+        button.classList.add(currPlayer === "🐱" ? "cat" : "dog");
         button.style.pointerEvents = "none"; // Disable further clicks
         
         // Check for win
@@ -56,7 +46,7 @@ function buttonClick(number) {
             showDrawModal();
         } else {
             // Switch players
-            currPlayer = currPlayer === "cat" ? "dog" : "cat";
+            currPlayer = currPlayer === "🐱" ? "🐶" : "🐱";
             updateCurrentPlayerDisplay();
         }
     }
@@ -108,7 +98,7 @@ function resetGame() {
         [null, null, null]
     ];
     
-    currPlayer = "cat";
+    currPlayer = "🐱";
     gameActive = true;
     
     // Reset all buttons
@@ -124,10 +114,9 @@ function resetGame() {
 }
 
 function updateCurrentPlayerDisplay() {
-    const display = document.getElementById("current-player-image");
+    const display = document.getElementById("current-player-display");
     if (display) {
-        display.src = images[currPlayer];
-        display.alt = currPlayer;
+        display.textContent = currPlayer;
     }
 }
 
@@ -135,20 +124,19 @@ function updateScoreDisplay() {
     const catScore = document.getElementById("cat-score");
     const dogScore = document.getElementById("dog-score");
     
-    if (catScore) catScore.textContent = scores["cat"];
-    if (dogScore) dogScore.textContent = scores["dog"];
+    if (catScore) catScore.textContent = scores["🐱"];
+    if (dogScore) dogScore.textContent = scores["🐶"];
 }
 
 function showWinnerModal(winner) {
     const modal = document.getElementById("winner-modal");
-    const winnerImage = document.getElementById("winner-image");
+    const winnerEmoji = document.getElementById("winner-emoji");
     const winnerText = document.getElementById("winner-text");
     const winnerMessage = document.getElementById("winner-message");
     
-    winnerImage.src = images[winner];
-    winnerImage.alt = winner;
+    winnerEmoji.textContent = winner;
     
-    if (winner === "cat") {
+    if (winner === "🐱") {
         winnerText.textContent = "Cats Win!";
         winnerMessage.textContent = "Meow! The cats have conquered the board! 🎉";
     } else {
@@ -161,13 +149,11 @@ function showWinnerModal(winner) {
 
 function showDrawModal() {
     const modal = document.getElementById("winner-modal");
-    const winnerImage = document.getElementById("winner-image");
+    const winnerEmoji = document.getElementById("winner-emoji");
     const winnerText = document.getElementById("winner-text");
     const winnerMessage = document.getElementById("winner-message");
     
-    // For draw, we can show both animals or a friendship image
-    winnerImage.src = "https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=240&h=240&fit=crop";
-    winnerImage.alt = "friendship";
+    winnerEmoji.textContent = "🤝";
     winnerText.textContent = "It's a Draw!";
     winnerMessage.textContent = "Cats and dogs can be friends after all! 💕";
     

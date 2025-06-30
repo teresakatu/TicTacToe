@@ -64,7 +64,7 @@ body {
 }
 
 .player-indicator {
-    background: linear-gradient(45deg, #ff9a9e, #fecfef);
+    background: linear-gradient(45deg, #ff9a9e);
     padding: 15px;
     border-radius: 20px;
     margin-bottom: 20px;
@@ -115,11 +115,11 @@ body {
     gap: 10px;
     margin: 0 auto 30px auto;
     padding: 20px;
-    background: linear-gradient(45deg, #ffecd2, #fcb69f);
+    background: linear-gradient(45deg, #fcb69f);
     border-radius: 20px;
     box-shadow: inset 0 5px 15px rgba(0, 0, 0, 0.1);
-    width: 340px;
-    height: 340px;
+    width: 360px;
+    height: 360px;
 }
 
 .cell {
@@ -148,16 +148,14 @@ body {
     transform: translateY(-2px);
 }
 
-/* 🎯 HIGHLIGHTED CHANGE: Made icons MUCH bigger! */
 .cell-image {
-    width: 90px;
-    height: 90px;
-    border-radius: 12px;
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
     image-rendering: crisp-edges;
     transition: all 0.3s ease;
-    object-fit: cover;
 }
 
 .cell.cat {
@@ -369,10 +367,9 @@ body {
         height: 80px;
     }
     
-    /* 🎯 HIGHLIGHTED CHANGE: Mobile icons bigger too! */
     .cell-image {
-        width: 72px;
-        height: 72px;
+        width: 55px;
+        height: 55px;
     }
     
     .current-player-image {
@@ -426,10 +423,9 @@ body {
         height: 70px;
     }
     
-    /* 🎯 HIGHLIGHTED CHANGE: Small mobile icons bigger too! */
     .cell-image {
-        width: 62px;
-        height: 62px;
+        width: 50px;
+        height: 50px;
     }
     
     .current-player-image {
