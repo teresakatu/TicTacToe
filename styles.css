@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,17 +7,18 @@
 }
 
 body {
-    font-family: 'Courier New', 'Monaco', 'Menlo', 'Consolas', monospace;
+    font-family: 'Press Start 2P', cursive;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    font-weight: bold;
-    text-rendering: optimizeSpeed;
-    -webkit-font-smoothing: none;
-    -moz-osx-font-smoothing: unset;
+    font-size: 12px;
+    line-height: 1.6;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
 }
 
 .container {
@@ -34,12 +37,11 @@ body {
 }
 
 .title {
-    font-size: 2.5rem;
+    font-size: 20px;
     color: #4a5568;
     margin-bottom: 15px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     animation: bounce 2s infinite;
-    font-weight: bold;
     letter-spacing: 2px;
 }
 
@@ -64,8 +66,7 @@ body {
 }
 
 .current-player {
-    font-size: 1.3rem;
-    font-weight: bold;
+    font-size: 14px;
     color: #4a5568;
     display: flex;
     align-items: center;
@@ -180,8 +181,7 @@ body {
     border: none;
     padding: 15px 30px;
     border-radius: 25px;
-    font-size: 1.1rem;
-    font-weight: bold;
+    font-size: 12px;
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 5px 15px rgba(232, 67, 147, 0.3);
@@ -215,8 +215,7 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-size: 12px;
     margin-bottom: 5px;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -232,8 +231,7 @@ body {
 }
 
 .score-value {
-    font-size: 2rem;
-    font-weight: bold;
+    font-size: 24px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -285,16 +283,15 @@ body {
 }
 
 #winner-text {
-    font-size: 2rem;
+    font-size: 18px;
     margin-bottom: 10px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    font-weight: bold;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
 #winner-message {
-    font-size: 1.2rem;
+    font-size: 12px;
     margin-bottom: 20px;
     opacity: 0.9;
     letter-spacing: 1px;
@@ -306,8 +303,7 @@ body {
     border: none;
     padding: 15px 30px;
     border-radius: 25px;
-    font-size: 1.1rem;
-    font-weight: bold;
+    font-size: 12px;
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 5px 15px rgba(232, 67, 147, 0.3);
@@ -327,7 +323,7 @@ body {
     }
     
     .title {
-        font-size: 2rem;
+        font-size: 16px;
     }
     
     .game-board {
@@ -356,6 +352,26 @@ body {
     .winner-image {
         width: 100px;
         height: 100px;
+    }
+    
+    .current-player {
+        font-size: 12px;
+    }
+    
+    .score-label {
+        font-size: 10px;
+    }
+    
+    .score-value {
+        font-size: 20px;
+    }
+    
+    #winner-text {
+        font-size: 16px;
+    }
+    
+    #winner-message {
+        font-size: 10px;
     }
 }
 
@@ -387,5 +403,29 @@ body {
     .winner-image {
         width: 80px;
         height: 80px;
+    }
+    
+    .title {
+        font-size: 14px;
+    }
+    
+    .current-player {
+        font-size: 10px;
+    }
+    
+    .score-label {
+        font-size: 8px;
+    }
+    
+    .score-value {
+        font-size: 18px;
+    }
+    
+    #winner-text {
+        font-size: 14px;
+    }
+    
+    #winner-message {
+        font-size: 8px;
     }
 }
