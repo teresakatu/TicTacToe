@@ -148,14 +148,16 @@ body {
     transform: translateY(-2px);
 }
 
+/* 🎯 HIGHLIGHTED CHANGE: Made icons MUCH bigger! */
 .cell-image {
-    width: 85px;
-    height: 85px;
+    width: 90px;
+    height: 90px;
     border-radius: 12px;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
     image-rendering: crisp-edges;
     transition: all 0.3s ease;
+    object-fit: cover;
 }
 
 .cell.cat {
@@ -367,9 +369,10 @@ body {
         height: 80px;
     }
     
+    /* 🎯 HIGHLIGHTED CHANGE: Mobile icons bigger too! */
     .cell-image {
-        width: 68px;
-        height: 68px;
+        width: 72px;
+        height: 72px;
     }
     
     .current-player-image {
@@ -423,9 +426,10 @@ body {
         height: 70px;
     }
     
+    /* 🎯 HIGHLIGHTED CHANGE: Small mobile icons bigger too! */
     .cell-image {
-        width: 58px;
-        height: 58px;
+        width: 62px;
+        height: 62px;
     }
     
     .current-player-image {
